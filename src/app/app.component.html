@@ -1,8 +1,8 @@
 <div class="head">
     <div class="banner">
         <div class="nav">
-            <div class="item">Accueil</div>
-            <div class="item">Articles</div>
+            <div class="item" routerLink="/">Accueil</div>
+            <div class="item" routerLink="/articles">Articles</div>
         </div>
         <div class="greeting">
             <h1>Code console</h1>
@@ -11,10 +11,13 @@
 
     </div>
 </div>
+<router-outlet></router-outlet>
 
-<app-page-division></app-page-division>
-<div class="container">
-    <app-member></app-member>
-    <app-services id="services"></app-services>
 
+<div class="footer">
+    <dir>
+        <hr>
+        <h1>Made by the codeconsole team</h1>
+        <p>Email us <span>codeconsoleteam@gmail.com</span></p>
+    </dir>
 </div>

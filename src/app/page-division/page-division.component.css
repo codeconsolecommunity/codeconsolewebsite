@@ -1,5 +1,6 @@
 .division {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     height: 300px;
     width: 100%;
@@ -16,6 +17,7 @@
 
 .division .img {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -33,4 +35,17 @@
 .container {
     padding: 5%;
     padding-top: 0% !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .division div.img {
+        width: 0%;
+    }
+    .division div.text {
+        width: 100%;
+    }
+    .division.dark .text h1,
+    .division.dark .text p {
+        text-align: center;
+    }
 }

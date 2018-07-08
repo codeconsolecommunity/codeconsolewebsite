@@ -3,6 +3,9 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-top: 12%;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 .img {
@@ -11,9 +14,11 @@
 }
 
 .img button {
+    border: none;
     position: absolute;
     top: 45%;
     left: 90%;
+    opacity: 0.4;
     background: rgba(128, 128, 128, 0.603);
     border-radius: 50pt;
     padding: 5%;
@@ -54,10 +59,37 @@
 .techno div {
     width: 30%;
     padding: 3%;
-    color: white;
+    color: rgba(255, 255, 255, 0.644);
     font-weight: bold;
     font-size: 150%;
-    background: rgba(128, 128, 128, 0.575);
-    border: 1px solid grey;
     cursor: pointer;
+}
+
+.hide {
+    text-align: center;
+}
+
+.next {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .content,
+    .img {
+        width: 100%;
+    }
+    .techno {
+        display: none;
+    }
+    .next {
+        display: inline-block;
+        padding: 10%;
+        background: rgba(128, 128, 128, 0.637);
+        color: white;
+        font-weight: bold;
+        border: none;
+    }
+    .img button {
+        display: none;
+    }
 }

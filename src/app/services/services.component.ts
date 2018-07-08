@@ -15,11 +15,9 @@ import {
   animations: [
     trigger('switch', [
       state('changed', style({
-        width: '30%',
         opacity: 1
       })),
       state('changing',   style({
-        width: '0%',
         opacity: 0
       })),
       transition('changed => changing', animate('1000ms ease')),
