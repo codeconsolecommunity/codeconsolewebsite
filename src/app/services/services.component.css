@@ -1,0 +1,63 @@
+.container {
+    background: black;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.img {
+    position: relative;
+    width: 30%;
+}
+
+.img button {
+    position: absolute;
+    top: 45%;
+    left: 90%;
+    background: rgba(128, 128, 128, 0.603);
+    border-radius: 50pt;
+    padding: 5%;
+    color: white;
+    font-weight: bold;
+}
+
+.content {
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 60%;
+}
+
+.content h1 {
+    color: lightgray;
+}
+
+.content p {
+    font-weight: bold;
+    width: 100%;
+}
+
+.img img {
+    height: 100%;
+    width: 100%;
+}
+
+.techno {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    word-wrap: wrap;
+    flex-direction: row;
+}
+
+.techno div {
+    width: 30%;
+    padding: 3%;
+    color: white;
+    font-weight: bold;
+    font-size: 150%;
+    background: rgba(128, 128, 128, 0.575);
+    border: 1px solid grey;
+    cursor: pointer;
+}

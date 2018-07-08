@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container div {
+    position: relative;
+    width: 30%;
+}
+
+div.container .img {
+    background-color: black;
+}
+
+.container div img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    width: 100%;
+    transition: 3s;
+}
+
+.buttons {
+    float: right;
+}
+
+.buttons button {
+    background-color: transparent;
+    border-right: none !important;
+    border: 1px solid gray;
+    border-radius: 5pt 0pt 5pt 0pt;
+}
+
+.buttons button:hover {
+    background: gray;
+    font-weight: bold;
+    transition: 2s;
+}

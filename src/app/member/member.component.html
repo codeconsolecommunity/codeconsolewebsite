@@ -1,0 +1,13 @@
+<div class="container" *ngIf="selectedMember">
+    <div class="img">
+        <img [@img]="state" [src]="selectedMember.imageSrc" alt="">
+    </div>
+    <div [@text]="state">
+        <h1>{{selectedMember.fullname}}</h1>
+        <p>{{selectedMember.description}}</p>
+    </div>
+</div>
+
+<div class="buttons">
+    <button (click)="nextMember()">Suivant</button>
+</div>

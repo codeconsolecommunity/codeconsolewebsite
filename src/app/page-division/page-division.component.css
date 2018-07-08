@@ -1,0 +1,36 @@
+.division {
+    display: flex;
+    justify-content: space-around;
+    height: 300px;
+    width: 100%;
+    background-color: white;
+}
+
+.division div {
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+    width: 30%;
+}
+
+.division .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.division div img {
+    width: 100%;
+    height: 100%;
+}
+
+.division.dark {
+    background-color: rgb(65, 63, 63);
+    color: white;
+}
+
+.container {
+    padding: 5%;
+    padding-top: 0% !important;
+}

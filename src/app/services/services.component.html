@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="img">
+        <button (click)="nextService()">>>> </button>
+        <img [src]="selectedService.imgSrc" alt="">
+    </div>
+    <div class="content">
+        <div class="text">
+            <h1> {{selectedService.title}} </h1>
+            <p> {{selectedService.description}} </p>
+        </div>
+        <div class="techno">
+            <div [@switch]="state" *ngFor="let techno of selectedService.techno"> {{techno}} </div>
+
+        </div>
+    </div>
+</div>
